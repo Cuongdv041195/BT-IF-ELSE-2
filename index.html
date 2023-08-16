@@ -12,8 +12,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container">
+<body class="bg-dark">
+    <div class="container bg-light">
+        <br>
         <div class="BT1">
             <h2>BT1: Tìm Ngày Tháng Năm</h2>
             <div class="wrap d-flex">
@@ -33,6 +34,9 @@
             <button onclick="timNgayKeTiep()" id="timNgayKeTiep" class="btn btn-danger">Tìm</button>
             <div class="mt-2 alert alert-success w-25">
                Ngày Tiếp Theo: <span id="resultBT1__next"></span>
+            </div>
+            <div class="mt-2 alert alert-success w-25">
+               Ngày Hôm Trước: <span id="resultBT1__pre"></span>
             </div>
         </div>
         <br><br><hr><br><br>
@@ -73,24 +77,33 @@
             <h2>BT4: Tìm Tọa Độ</h2>
             <div class="wrap d-flex">
                 <div class="form-group w-25 mr-3">
-                    <label for="">Sinh Viên A</label>
+                    <label for="" class="text-success">Sinh Viên A</label>
                     <input type="text" name="" id="sinhVien1x" class="form-control" placeholder="x" aria-describedby="helpId">
                     <input type="text" name="" id="sinhVien1y" class="form-control mt-2" placeholder="y" aria-describedby="helpId">
+                    <div class="mt-2 alert alert-success">
+                        Khoảng Cách: <span id="khoangCachA"></span>
+                      </div>
                 </div>
                 <div class="form-group w-25 mr-3">
-                    <label for="">Sinh Viên B</label>
+                    <label for="" class="text-primary">Sinh Viên B</label>
                     <input type="text" name="" id="sinhVien2x" class="form-control" placeholder="x" aria-describedby="helpId">
                     <input type="text" name="" id="sinhVien2y" class="form-control mt-2" placeholder="y" aria-describedby="helpId">
+                    <div class="mt-2 alert alert-success">
+                        Khoảng Cách: <span id="khoangCachB"></span>
+                      </div>
                 </div>
                 <div class="form-group w-25 mr-3">
-                    <label for="">Sinh Viên C</label>
+                    <label for="" class="text-warning">Sinh Viên C</label>
                     <input type="text" name="" id="sinhVien3x" class="form-control" placeholder="x" aria-describedby="helpId">
                     <input type="text" name="" id="sinhVien3y" class="form-control mt-2" placeholder="y" aria-describedby="helpId">
+                    <div class="mt-2 alert alert-success">
+                        Khoảng Cách: <span id="khoangCachC"></span>
+                      </div>
                 </div>
                
             </div>
             <div class="form-group w-25 mr-3">
-                <label for="">Tọa Độ Trường</label>
+                <label for="" class="font-weight-bolder">Tọa Độ Trường</label>
                 <input type="text" name="" id="truongHocx" class="form-control" placeholder="x" aria-describedby="helpId">
                 <input type="text" name="" id="truongHocy" class="form-control mt-2" placeholder="y" aria-describedby="helpId">
             </div>
@@ -98,6 +111,7 @@
             <div class="mt-2 alert alert-success w-25">
               Kết Luận: <span id="resultBT4"></span>
             </div>
+            <br><br><hr><br><br>
         </div>
     </div>
 
